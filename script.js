@@ -16,8 +16,6 @@ callApi function to coordinate api calls.
  */
 function initializeApp() {
     var submit_button = $('#submit_button');
-    screen.orientation.lock('portrait').catch(function(){
-    });
     submit_button.on('click', geocode);
     google.charts.load('current', { 'packages': ['corechart'] });
     callApi();
@@ -642,10 +640,10 @@ function drawChart() {
             if(windowWidth < 1199){
                 windowWidth = 1500;
             }
-            chartWidth = windowWidth/3;
+            chartWidth = windowWidth/2;
             chartHeight = windowHeight/2;
-            titleFont = 28;
-            fontSize = 18;
+            titleFont = 32;
+            fontSize = 20;
             topPercent = '10%';
         }
 
@@ -690,7 +688,7 @@ function drawChart() {
             left: "5%",
             top: topPercent,
             height: "80%",
-            width: "80%"
+            width: "75%"
         }
 
     };
