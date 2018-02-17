@@ -1,9 +1,9 @@
 # Environmindful
 
-Environmindful is an environmental dashboard that displays the air quality index (AQI), energy production (US states Only), news near the region searched, and the current weather using various APIs. 
+Environmindful is an environmental dashboard that displays the air quality index (AQI), energy production, news near the region searched, and the current weather using various APIs. 
 
 ## Screenshots
-Will add later.
+![alt text](https://github.com/brucean52/environmindful/blob/master/images/screenshot.png "Screenshot")
 
 ## Built With
 

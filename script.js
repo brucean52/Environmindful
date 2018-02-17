@@ -218,8 +218,6 @@ function callApi() {
     handleWeatherInfo();
     pullFromCarma();
     getDataByLocation(geo_info_object.lat, geo_info_object.lon);
-    // getAqiData(geo_info_object.state);
-
     setTimeout(function () { google.charts.setOnLoadCallback(drawChart); }, 2500);
 
 }
@@ -329,7 +327,7 @@ function determineAqiLevel(aqi, keyword) {
     var colorLvl;
 
     if (aqi > 0 && aqi < 50) {
-        colorLvl = '#009966'; //green
+        colorLvl = '#56b300'; //green
         airPollutionLvl = 'Good';
         healthImplications = 'Air quality is considered satisfactory, and air pollution poses little or no risk';
         cautionaryStmt = 'None';
@@ -603,10 +601,8 @@ function drawChart() {
     
     var windowWidth = window.innerWidth;
     var windowHeight = window.innerHeight;
-    
     if (geo_info_object.state === undefined || geo_info_object.fossil === '') {
         name = 'Sorry, No Energy Production Data';
-        return;
     } else {
         name = geo_info_object.state + ' Energy Production';
     }
@@ -660,7 +656,7 @@ function drawChart() {
 
     var options = {
         enableInteractivity: false,
-        backgroundColor: '#61982f',
+        backgroundColor: '#558b2f',
         title: name,
         titleTextStyle: {
             color: 'white',

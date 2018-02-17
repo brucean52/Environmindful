@@ -1,55 +1,75 @@
 @font-face {
-  font-family: 'Montserrat-Alt';
-  src: url(MontserratAlternates-Bold.otf);
+    font-family: 'Montserrat-Alt';
+    src: url(MontserratAlternates-Bold.otf);
 }
+
 /*  General Styles  */
 
-body {
-  #color: #009900;
-  background-color: #f3f3f3;
-
-}
-
 .title > img {
-  max-height: 80px;
-  display: inline-block;
-  margin-left: 2%;
-  #-webkit-filter: drop-shadow(3px 3px 4px #000000);
-  #filter: drop-shadow(3px 3px 4px #000000);
+    width: 60%;
+    margin: 3%;
+    display: inline-block;
 }
+
+@media (max-width: 991px){
+    .title > img {
+        width: 150%;
+    }
+}
+
+@media (max-width: 767px){
+    .title > img {
+        width: 50%;
+    }
+}
+
 h1 {
-  font-family: Montserrat-Alt;
-    color: #7bc23d;
+    font-family: Montserrat-Alt;
+    color: #558b2f;
     font-size: 2.5vw;
     text-shadow: 2px 1px 2px #888888;
 }
 
+@media (max-width: 991px){
+    h1{
+        font-size: 32px;
+    }
+}
+
+@media (max-width: 767px){
+    h1{
+        font-size: 24px;
+    }
+}
+
 h2 {
-  font-family: Montserrat-Alt;
-/*
+    font-family: Montserrat-Alt;
+    /*
   display: inline-block;
   font-size: 5vmin;
   vertical-align: bottom;
   text-shadow: 3px 2px 7px #000000;
 */
 }
+
 /* Main Content */
 
-#location-input{
+#location-input {
     margin-bottom: 1%;
 }
+
 #submit_button {
-  background-color: #ff7342;
+    background-color: #ff7342;
     margin-bottom: 1%;
-  #transition: 0.2s;
-  font-weight: bold;
+    font-weight: bold;
     margin-right: 0.5%;
     box-shadow: 1px 1px 2px #666666;
 
-    
+
 }
+
 #submit_button:hover {
-  background-color: #dd651d;
+    background-color: #dd651d;
 }
 
 
@@ -58,143 +78,174 @@ h2 {
 }
 
 /* ****** START GOOGLE MAP ***** */
+
 .map_div {
-  height: 35vh;
-  /*margin-bottom: 2vh;*/
-  position: relative;
+    height: 35vh;
+    /*margin-bottom: 2vh;*/
+    position: relative;
 }
 
 #map_display {
-  margin: 0;
-  height: 100%;
-  border: 5px #619830b5 ridge;
-  box-shadow: 1px 1px 1px #666666;
-  /* border-radius: 5px; */
+    margin: 0;
+    height: 100%;
+    border: 5px #558b2f ridge;
+    box-shadow: 1px 1px 1px #888888;
+    /* border-radius: 5px; */
 }
 
 .map_div {
     width: 99.7%;
-  padding-left: 0;
-  padding-right: 0;
+    padding-left: 0;
+    padding-right: 0;
 }
+
 .displayMapError {
-  font-size: 3rem;
-  color: white;
-  background-color: #619830b5;
-  /*text-align: center;*/
-  vertical-align: middle;
-  padding-top: 10vh;
-  display: flex;
-  justify-content: center;
+    font-size: 3rem;
+    color: white;
+    background-color: #558b2f;
+    /*text-align: center;*/
+    vertical-align: middle;
+    padding-top: 10vh;
+    display: flex;
+    justify-content: center;
 }
+
 /* ****** END GOOGLE MAP ***** */
 
 /* ****** START CAROUSEL AND NEWS CSS ***** */
 
-.news-carousel{
+.news-carousel {
     margin-left: 0;
     margin-right: 0;
 }
+
 .carouselContainer {
-  height: 50vh;
-  background-color: #619830b5;
-   border-radius: 3px; 
-  /* text-align: center; */
-  color: #000;
-  box-shadow: 2px 2px 3px #666666;
-}
-.news {
-  height: 50vh;
-  background-color: #619830b5;
-  border-radius: 3px; 
-  box-shadow: 2px 2px 3px #666666;
-}
-.news h1 {
-  font-size: 3vmin;
-  font-weight: 400;
-  color: #fff;
-  margin-left: 3%;
-}
-.newsTitle {
-  margin: 0 auto;
-}
-.newsAuthor {
-  color: #888888;
-}
-.newsLink {
-  font-size: 1.5em;
-  color: #9e9e9e;
-  font-weight: 500;
-}
-.newsLink:hover,
-.fullArticle a:hover {
-  cursor: pointer;
-  text-decoration: none;
-  color: #ff652f;
-}
-.newsModalImage {
-  width: 100%;
-  margin-bottom: 2%;
+    height: 50vh;
+    background-color: #558b2f;
+    border-radius: 3px;
+    /* text-align: center; */
+    color: #000;
+    box-shadow: 2px 2px 3px #666666;
 }
 
-.newsSourceLink{
+.news {
+    height: 50vh;
+    background-color: #558b2f;
+    border-radius: 3px;
+    box-shadow: 2px 2px 3px #666666;
+}
+
+.news h1 {
+    font-size: 3vmin;
+    font-weight: 400;
+    color: #fff;
+    margin-left: 3%;
+}
+
+.newsTitle {
+    margin: 0 auto;
+}
+
+.newsAuthor {
+    color: #888888;
+}
+
+.newsLink {
+    font-size: 1.5em;
+    color: #9e9e9e;
+    font-weight: 500;
+}
+
+.newsLink:hover,
+.fullArticle a:hover {
+    cursor: pointer;
+    text-decoration: none;
+    color: #ff652f;
+}
+
+.newsModalImage {
+    width: 100%;
+    margin-bottom: 2%;
+}
+
+.newsSourceLink {
     color: #619830;
 }
 
 .newsListDisplay {
-  background-color: #272727;
-  width: 95%;
-  height: 40vh;
-  padding-top: 2%;
-  padding-left: 5%;
-  padding-right: 5%;
-  margin: 0 auto;
-  overflow-y: auto;
+    font-size: 1.25em;
+    background-color: #272727;
+    color: #619830;
+    width: 95%;
+    height: 40vh;
+    padding-top: 2%;
+    padding-left: 5%;
+    padding-right: 5%;
+    margin: 0 auto;
+    overflow-y: auto;
 }
+
+@media (max-width:767px){
+    .newsLink{
+        font-size: 1em;
+    }
+    
+        .newsListDisplay{
+        font-size: .8em;
+    }
+}
+
 .modal-title,
 .modal-body p,
 .fullArticle {
-  color: #272727;
+    color: #272727;
 }
+
 .modal-title {
-  font-family: Montserrat-Alt;
+    font-family: Montserrat-Alt;
 }
+
 .fullArticle a {
-  color: #9d9d9d;
+    color: #9d9d9d;
 }
+
 .close:hover {
-  color: #ff652f;
+    color: #ff652f;
 }
+
 .news,
 .carouselContainer {
-  margin-bottom: 2vh;
+    margin-bottom: 2vh;
 }
+
 .modal-content {
-  top: 50vh;
-  transform: translateY(-50%);
-  border: 3px solid #7bc23d;
+    top: 50vh;
+    transform: translateY(-50%);
+    border: 3px solid #7bc23d;
 }
+
 @media (min-width: 1180px) {
-  .carouselContainer {
-    width: 57%;
-    position: relative;
-    left: 1%;
-  }
+    .carouselContainer {
+        width: 57%;
+        position: relative;
+        left: 1%;
+    }
 }
 
 .carousel-control.left,
 .carousel-control.right {
-  background: none !important;
-  filter: none !important;
-  outline: 0;
+    background: none !important;
+    filter: none !important;
+    outline: 0;
 }
 
 .carousel-control {
-  opacity: 0.1;
-  width: 5%;
+    opacity: 0.1;
+    width: 5%;
 }
+
 .carousel-control:hover {
-  visibility: visible;
+    visibility: visible;
 }
 
 /*
@@ -204,24 +255,29 @@ div.item {
 */
 
 .air-pollution {
-  margin: 17px;
+    margin: 17px;
 }
+
 /* ****** END CAROUSEL AND NEWS CSS ***** */
 
 /* ****** START OF PIE CHART SLIDE ****** */
+
 rect {
-  fill: none;
+    fill: none;
 }
+
 svg:not(:root) {
-  margin: 20px;
+    margin: 20px;
 }
 
 #piechart {
-  padding-bottom: 3%;
+    padding-bottom: 3%;
 }
+
 /* ****** END OF PIE CHART SLIDE ****** */
 
 /* ****** START OF WEATHER SLIDE ****** */
+
 .displayTempError {
     font-size: 3rem;
     color: white;
@@ -234,82 +290,85 @@ svg:not(:root) {
 }
 
 #weatherDisplay {
-  font-size: 3vmin;
-  color: white;
-  line-height: initial;
-  text-align: left;
-  margin-top: 15%;
-  /*text-align: center;*/
+    font-size: 3vmin;
+    color: white;
+    line-height: initial;
+    text-align: left;
+    margin-top: 15%;
+    /*text-align: center;*/
 }
+
 #weatherList {
-  list-style: none;
+    list-style: none;
 }
+
 #weatherList li {
-  line-height: 5vh;
+    line-height: 5vh;
 }
 
 @media (min-width: 1180px) {
-  #weatherIcon {
-    height: 20%;
-    width: 15%;
-    float: right;
-    margin-right: 10%;
-  }
+    #weatherIcon {
+        height: 20%;
+        width: 15%;
+        float: right;
+        margin-right: 10%;
+    }
 
-  #weatherList {
-    display: inline-block;
-    padding-left: 12%;
-    text-align: left;
-  }
+    #weatherList {
+        display: inline-block;
+        padding-left: 12%;
+        text-align: left;
+    }
 }
 
 @media (min-width: 767px) and (max-width: 1179px) {
-  #weatherDisplay {
-    font-size: 3vmin;
-  }
+    #weatherDisplay {
+        font-size: 3vmin;
+    }
 
-  #weatherIcon {
-    width: 15%;
-    height: 20%;
-    text-align: center;
-    float: right;
-    padding-right: 5%;
-  }
+    #weatherIcon {
+        width: 15%;
+        height: 20%;
+        text-align: center;
+        float: right;
+        padding-right: 5%;
+    }
 
-  #weatherList {
-    display: inline-block;
-    /*padding-left: 0;*/
-    /*text-align: center;*/
-  }
+    #weatherList {
+        display: inline-block;
+        /*padding-left: 0;*/
+        /*text-align: center;*/
+    }
 }
 
 @media (max-width: 767px) {
-  #weatherDisplay {
-    font-size: 5vmin;
-  }
+    #weatherDisplay {
+        font-size: 5vmin;
+    }
 
-  #weatherIcon {
-    width: 15%;
-    height: 20%;
-    margin-right: 5%;
-    text-align: center;
-    float: right;
-  }
+    #weatherIcon {
+        width: 15%;
+        height: 20%;
+        margin-right: 5%;
+        text-align: center;
+        float: right;
+    }
 
-  #weatherList {
-    display: block;
-    padding-left: 0;
-    /*text-align: center;*/
-  }
+    #weatherList {
+        display: block;
+        padding-left: 0;
+        /*text-align: center;*/
+    }
 }
 
 /* ****** END OF WEATHER SLIDE ****** */
 
 /* ****** START AIR QUALITY INDEX SLIDE ***** */
+
 #aqi-table {
-  margin: 0 auto;
-  margin-top: 2%;
-  font-size: 2vmin;
+    margin: 0 auto;
+    margin-top: 2%;
+    font-size: 2vmin;
 }
 
 #info-icon {
@@ -323,6 +382,7 @@ svg:not(:root) {
     opacity: 0.4;
     cursor: pointer;
 }
+
 #info-icon:hover {
     opacity: 1;
 }
@@ -346,48 +406,58 @@ svg:not(:root) {
 }
 
 @-webkit-keyframes fadeIn {
-    from {opacity: 0;} 
-    to {opacity: 1;}
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
 
 @keyframes fadeIn {
-    from {opacity: 0;}
-    to {opacity:1 ;}
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
 
 /* ****** END AIR QUALITY INDEX SLIDE ***** */
 
 /* ******START OF CITY AIR POLLUTION SLIDE****** */
+
 .good {
-  background-color: #009966;
+    background-color: #56b300;
 }
 
 .moderate {
-  background-color: #ffde33;
+    background-color: #ffde33;
 }
 
 .sensitive {
-  background-color: #ff9933;
+    background-color: #ff9933;
 }
 
 .unhealthy {
-  background-color: #cc0033;
+    background-color: #cc0033;
 }
 
 .very-unhealthy {
-  background-color: #660099;
+    background-color: #660099;
     color: white;
 }
 
 .hazard {
-  background-color: #7e0023;
+    background-color: #7e0023;
     color: white;
 }
+
 .airContainer {
-  height: 50vmin;
-  width: 80%;
-  border: 2px solid black;
-  padding: 2%;
+    height: 50vmin;
+    width: 80%;
+    border: 2px solid black;
+    padding: 2%;
 }
 
 #aqi-number-container {
@@ -398,98 +468,100 @@ svg:not(:root) {
     margin: 0px auto;
     margin-bottom: 2%;
     position: relative;
+    font-size: 1.5vmin;
 }
 
 #aqiNum {
-  font-size: 6vmin;
+    font-size: 6vmin;
 }
 
 table,
 td,
 th {
-  border: 1px solid black;
-  padding: 6px;
-  text-align: left;
+    border: 1px solid black;
+    padding: 6px;
+    text-align: left;
 }
+
 th,
 .neutral {
-  background-color: #dfdfdf;
-  text-align: center;
-  font-size: 2vmin;
+    background-color: #dfdfdf;
+    text-align: center;
+    font-size: 2vmin;
 }
 
 
 /* ******END OF CITY AIR POLLUTION SLIDE****** */
 
 .landscapeCheck {
-visibility: hidden;
+    visibility: hidden;
 }
 
 @media (min-width: 1180px) {
-  .carouselContainer {
-    width: 57%;
-    position: relative;
-    left: 1%;
-  }
+    .carouselContainer {
+        width: 57%;
+        position: relative;
+        left: 1%;
+    }
 }
 
 @media (max-width: 767px) {
-  .aqi-container > img {
-    margin-top: 20%;
-  }
-  #weatherDisplay {
-    margin-top: 10%;
-  }
+    .aqi-container > img {
+        margin-top: 20%;
+    }
+    #weatherDisplay {
+        margin-top: 10%;
+    }
 }
 
 @media (max-width: 375px) {
-  #aqi-table,
-  .neutral {
-    font-size: 3.5vmin;
-  }
-  #aqi-number-container {
-    width: 65%;
-  }
-  #aqiNum {
-    font-size: 8vmin;
-  }
-  #weatherDisplay {
-    margin-top: 25%;
-  }
-  .air-pollution {
-    margin: 10px;
-  }
-  th,
-  .neutral {
-    font-size: 3vmin;
-  }
-  .popUpText {
-    font-size: 3vmin;
-  }
+    #aqi-table,
+    .neutral {
+        font-size: 3.5vmin;
+    }
+    #aqi-number-container {
+        width: 65%;
+    }
+    #aqiNum {
+        font-size: 8vmin;
+    }
+    #weatherDisplay {
+        margin-top: 25%;
+    }
+    .air-pollution {
+        margin: 10px;
+    }
+    th,
+    .neutral {
+        font-size: 3vmin;
+    }
+    .popUpText {
+        font-size: 3vmin;
+    }
 }
 
-@media (min-width: 992px){
-    body{
+@media (min-width: 992px) {
+    body {
         margin-left: 10%;
         margin-right: 10%;
     }
 }
 
 @media screen and (max-width: 991px) and (orientation:landscape) {
-    body>.container-fluid{
+    body > .container-fluid {
         visibility: hidden;
     }
-    
-    .landscapeCheck{
+
+    .landscapeCheck {
         visibility: visible;
-        width:100%;
-        height:100%;
+        width: 100%;
+        height: 100%;
         position: absolute;
         top: 25%;
         left: 25%;
     }
-    
-    .landscapeCheck>h2{
+
+    .landscapeCheck > h2 {
         color: red;
     }
 }
