@@ -3,63 +3,58 @@
   src: url(MontserratAlternates-Bold.otf);
 }
 /*  General Styles  */
-* {
-  box-sizing: border-box;
-}
-body {
-  height: 100%;
-  color: #86c232;
-  background-color: transparent;
-}
 
-html {
-  background: url(images/stone-stack.jpeg) no-repeat center center fixed;
-  background-size: cover;
-  height: 100%;
+body {
+  #color: #009900;
+  background-color: #f3f3f3;
+
 }
 
 .title > img {
   max-height: 80px;
   display: inline-block;
   margin-left: 2%;
-  -webkit-filter: drop-shadow(3px 3px 4px #000000);
-  filter: drop-shadow(3px 3px 4px #000000);
+  #-webkit-filter: drop-shadow(3px 3px 4px #000000);
+  #filter: drop-shadow(3px 3px 4px #000000);
 }
 h1 {
   font-family: Montserrat-Alt;
+    color: #7bc23d;
+    font-size: 2.5vw;
+    text-shadow: 2px 1px 2px #888888;
 }
 
 h2 {
   font-family: Montserrat-Alt;
+/*
   display: inline-block;
   font-size: 5vmin;
   vertical-align: bottom;
   text-shadow: 3px 2px 7px #000000;
+*/
 }
 /* Main Content */
-.inputBox {
-  height: 8vh;
+
+#location-input{
+    margin-bottom: 1%;
 }
 #submit_button {
-  height: 5vh;
   background-color: #ff7342;
-  border: none;
-  transition: 0.2s;
+    margin-bottom: 1%;
+  #transition: 0.2s;
   font-weight: bold;
-  box-shadow: 1px 2px 10px #000000;
-  margin-left: 5px;
+    margin-right: 0.5%;
+    box-shadow: 1px 1px 2px #666666;
+
+    
 }
 #submit_button:hover {
   background-color: #dd651d;
 }
-.title-search-container {
-  position: relative;
-}
+
 
 .searchContainer {
-  margin: 2vh auto 2vh auto;
-  padding: 0;
-  /*line-height: 10vh;*/
+    margin-top: 2%;
 }
 
 /* ****** START GOOGLE MAP ***** */
@@ -70,14 +65,15 @@ h2 {
 }
 
 #map_display {
-  width: 99.7%;
+  margin: 0;
   height: 100%;
-  border: 5px #619830b0 ridge;
-  box-shadow: 0px 0px 13px 0px #000000;
+  border: 5px #619830b5 ridge;
+  box-shadow: 1px 1px 1px #666666;
   /* border-radius: 5px; */
 }
 
 .map_div {
+    width: 99.7%;
   padding-left: 0;
   padding-right: 0;
 }
@@ -94,19 +90,24 @@ h2 {
 /* ****** END GOOGLE MAP ***** */
 
 /* ****** START CAROUSEL AND NEWS CSS ***** */
+
+.news-carousel{
+    margin-left: 0;
+    margin-right: 0;
+}
 .carouselContainer {
   height: 50vh;
   background-color: #619830b5;
-  /* border-radius: 1%; */
+   border-radius: 3px; 
   /* text-align: center; */
   color: #000;
-  box-shadow: 0px 0px 13px 0px #000000;
+  box-shadow: 2px 2px 3px #666666;
 }
 .news {
   height: 50vh;
   background-color: #619830b5;
-  /* border-radius: 1%; */
-  box-shadow: 0px 0px 13px 0px #000000;
+  border-radius: 3px; 
+  box-shadow: 2px 2px 3px #666666;
 }
 .news h1 {
   font-size: 3vmin;
@@ -118,11 +119,11 @@ h2 {
   margin: 0 auto;
 }
 .newsAuthor {
-  color: #e4e4e4;
+  color: #888888;
 }
 .newsLink {
-  font-size: 1.2em;
-  color: #9d9d9d;
+  font-size: 1.5em;
+  color: #9e9e9e;
   font-weight: 500;
 }
 .newsLink:hover,
@@ -136,11 +137,15 @@ h2 {
   margin-bottom: 2%;
 }
 
+.newsSourceLink{
+    color: #619830;
+}
+
 .newsListDisplay {
   background-color: #272727;
   width: 95%;
   height: 40vh;
-  padding-top: 5%;
+  padding-top: 2%;
   padding-left: 5%;
   padding-right: 5%;
   margin: 0 auto;
@@ -167,7 +172,7 @@ h2 {
 .modal-content {
   top: 50vh;
   transform: translateY(-50%);
-  border: 3px solid #86c232;
+  border: 3px solid #7bc23d;
 }
 @media (min-width: 1180px) {
   .carouselContainer {
@@ -330,7 +335,7 @@ svg:not(:root) {
     position: absolute;
     background-color: #efefef;
     padding: 5px;
-    border-radius: 5px;
+    border-radius: 2px;
     border: 2px ridge #007305;
     transform: translateX(-50%);
     left: 50%;
@@ -371,10 +376,12 @@ svg:not(:root) {
 
 .very-unhealthy {
   background-color: #660099;
+    color: white;
 }
 
 .hazard {
   background-color: #7e0023;
+    color: white;
 }
 .airContainer {
   height: 50vmin;
@@ -385,7 +392,7 @@ svg:not(:root) {
 
 #aqi-number-container {
     border: 2px solid black;
-    border-radius: 6px;
+    border-radius: 3px;
     text-align: center;
     width: 45%;
     margin: 0px auto;
@@ -410,21 +417,8 @@ th,
   text-align: center;
   font-size: 2vmin;
 }
-/* ******END OF CITY AIR POLLUTION SLIDE****** */
 
-/* ***** Bootstrap Overrides****** */
-#location-input {
-  width: 100%;
-}
-.row {
-  margin: auto;
-}
-.inputDiv {
-  padding: 0;
-}
-.submitButtonDiv {
-  padding-left: 5px;
-}
+
 /* ******END OF CITY AIR POLLUTION SLIDE****** */
 
 .landscapeCheck {
@@ -474,8 +468,15 @@ visibility: hidden;
   }
 }
 
+@media (min-width: 992px){
+    body{
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+}
+
 @media screen and (max-width: 991px) and (orientation:landscape) {
-    body>.container{
+    body>.container-fluid{
         visibility: hidden;
     }
     
