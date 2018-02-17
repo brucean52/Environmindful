@@ -692,6 +692,7 @@ function drawChart() {
     chart.draw(data, options);
 }
 
+//draws chart when window is resized
 $( window ).resize(function() {
     var resizeTimer;
     clearTimeout(resizeTimer);

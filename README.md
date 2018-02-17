@@ -1,6 +1,6 @@
 # Environmindful
 
-Environmindful is an environmental dashboard that displays the air quality index (AQI), energy production, news near the region searched, and the current weather using various APIs. 
+Originally developed during an API hackathon, Environmindful is an environmental dashboard that displays the air quality index (AQI), energy production, news near the region searched, and the current weather using various APIs. 
 
 ## Screenshots
 ![alt text](https://github.com/brucean52/environmindful/blob/master/images/screenshot.png "Screenshot")
@@ -12,7 +12,6 @@ Environmindful is an environmental dashboard that displays the air quality index
 * [Weather API](https://openweathermap.org/api) - Current Weather Data
 * [Carma API](http://carma.org/api/) - Energy Production Data
 * [Google Maps API](https://developers.google.com/maps/) - Google Maps
-
 * [jQuery v3.2.1](https://jquery.com/) - HTML DOM Manipulation
 * [Bootstrap v3.3.7](https://getbootstrap.com/docs/3.3/) - Mobile Responsive Framework
 
