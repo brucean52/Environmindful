@@ -369,9 +369,6 @@ th,
 }
 
 @media (max-width: 991px){
-    .title > img {
-        width: 100%;
-    }
     h1{
         font-size: 32px;
     }
