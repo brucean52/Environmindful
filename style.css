@@ -9,7 +9,7 @@ body{
     background-color: #f2f2f2;
 }
 .title > img {
-    width: 70%;
+    width: 100%;
     margin: 1%;
     display: inline-block;
 }
@@ -369,9 +369,6 @@ th,
 }
 
 @media (max-width: 991px){
-    .title > img {
-        width: 150%;
-    }
     h1{
         font-size: 32px;
     }
