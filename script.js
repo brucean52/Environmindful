@@ -638,7 +638,7 @@ function drawChart() {
             }
             chartWidth = windowWidth/2;
             chartHeight = windowHeight/2;
-            titleFont = 32;
+            titleFont = 28;
             fontSize = 20;
             topPercent = '10%';
         }
