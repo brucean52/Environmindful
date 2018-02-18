@@ -5,6 +5,9 @@
 
 /*  General Styles  */
 
+body{
+    background-color: #f2f2f2;
+}
 .title > img {
     width: 70%;
     margin: 1%;
